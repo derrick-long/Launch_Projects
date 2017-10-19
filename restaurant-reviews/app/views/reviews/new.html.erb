@@ -1,0 +1,24 @@
+<h1> Review Form for <%= @restaurant.name %>  </h1>
+
+
+
+<% if @review.errors.any? %>
+  <h3> Please Correct The Following </h3>
+    <% @review.errors.full_messages.each do |message| %>
+      <li> <%= message %> </li>
+    <% end %>
+<% end %>
+
+
+<%= form_for [@restaurant,@review] do |f| %>
+
+  <%= f.label :rating %>
+  <%= f.text_field :rating %>
+
+  <%= f.label :review %>
+  <%= f.text_field :body, id: "Review" %>
+
+  <%= f.hidden_field :restaurant_id, value: @restaurant.id %>
+
+  <%= f.submit("Add Review") %>
+<% end %>

@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <% @grocery_item.each do |item| %>
+    <h2>
+        <%= item["name"] %>
+    </h2>
+    <% end %>
+    <ul>
+    <% @comments.each do |comment| %>
+      <li>
+      User: <%= comment["user_name"] %> - <%= comment["body"] %>
+      </li>
+    <% end %>
+
+    </ul>
+  </body>
+</html>

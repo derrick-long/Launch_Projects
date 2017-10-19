@@ -1,0 +1,89 @@
+nav {
+  background-color: #3498DB;
+  color:white;
+  padding-top:1em;
+  padding-bottom:1em;
+  margin-bottom: 2em;
+}
+
+body{
+  font-family:'Source Sans Pro'
+}
+h1{
+  margin:1em;
+}
+
+h1.site-title {
+  font-family: 'Alegreya'
+}
+
+h3{
+
+  margin:1em;
+}
+
+h4{
+
+  margin: auto;
+}
+a {
+  text-decoration: none;
+
+}
+
+h3 a {
+  color:white;
+  text-decoration:underline;
+  font-weight:bold;
+  font-family: 'Alegreya';
+
+}
+
+div.quote{
+  width: 60%;
+  margin:0 auto;
+  margin-bottom:2em;
+  border:solid 3px #27AE60;
+  background-color: #2ECC71;
+
+}
+
+div.try-it-now{
+  margin: auto;
+  margin-bottom:2em;
+  text-align:center;
+  width:35%;
+  border: solid 5px #C0382A;
+  border-radius:10%;
+  height: 20%;
+  background-color: #E74C3C;
+  color:white;
+}
+
+div.blue-page-section{
+  background-color: #2C3E50;
+  color:white;
+  margin:0;
+  padding:15px 15px 35px 15px;
+}
+
+
+p.quoted-from {
+  font-style:italic;
+  text-align:right;
+}
+
+
+
+footer {
+  background-color:#1C2224;
+  padding:10px;
+  text-align: center;
+  margin-top:-16px;
+
+}
+
+footer a {
+  color: #2F85BE;
+
+}

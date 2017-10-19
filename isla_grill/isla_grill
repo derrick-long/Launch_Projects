@@ -1,0 +1,8 @@
+dinner_total = 178.00
+tip = [15, 18, 20, 25].sample
+
+puts "The randomly selected tip percentage is #{tip}."
+
+total = (dinner_total * tip)/100.00
+
+puts "So you should tip your server: #{total} "

@@ -1,0 +1,55 @@
+div {
+  height:3em;
+  border-radius: 40%;
+  background-color: green;
+  align:center;
+  margin:auto;
+  margin-top: 1em;
+}
+
+div.tree-wrapper{
+  background-color: white;
+}
+
+
+
+
+
+div.trunk {
+  background-color:brown;
+  width: 3em;
+  height: 7em;
+  border-radius: 40%;
+  margin:auto;
+  align:center;
+
+}
+
+div.branch-6 {
+  width: auto;
+  }
+
+div.branch-5{
+  width:80%;
+}
+
+div.branch-4{
+  width:70%;
+}
+
+div.branch-3{
+  width:55%;
+}
+
+div.branch-2{
+  width: 40%;
+}
+
+div.branch-1 {
+  width: 20%;
+}
+
+div.branch-0 {
+  width: 10%;
+  border-radius:50%;
+}

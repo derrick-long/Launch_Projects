@@ -1,0 +1,9 @@
+<h1> Car Makers </h1>
+<%= link_to "Add New Manufacturer", new_manufacturer_path %>
+<% if @manufacturers.nil? %>
+  Add a manufactuer please
+<% else %>
+  <% @manufacturers.each do |manufacturer| %>
+      <li>  <%= manufacturer.name %> | Country of origin: <%= manufacturer.country %> </li>
+  <% end %>
+<% end %>

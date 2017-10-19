@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <ul>
+    <% @movie.each do |movie| %>
+      <li> Title: <%= movie["title"] %> | Genre : <%= movie["genre"] %> | Studio:  <%= movie["studio"] %> Rating : <%= movie["rating"] %> Year: <%= movie["year"] %> </li>
+    <% end %>
+  </ul>
+  <ol>
+    <% @cast_info.each do |member| %>
+      <li> Character : <%= member["character"] %> | Actor: <a href="/actors/<%= member["id"] %>"> <%= member["actor"] %> </a> </li>
+    <% end %>
+  </ol>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<h1>List of Shows</h1>
+<body>
+  <% @show_list.each do |show| %>
+  Title: <%= show[0]%> (<%=show[1]%>)
+  Starting Year: <%= show[2] %>
+  Synopsis: <%= show[3] %>
+  Genre: <%= show[4] %>
+</body>
+
+  <% end %>
+</html>

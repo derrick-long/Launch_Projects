@@ -1,0 +1,22 @@
+<!-- Put your News Aggregator articles.erb code here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News Aggregator Woo! </title>
+  </head>
+
+  <body>
+    <h2>Stories</h2>
+      <% @articles.each do |article| %>
+      <ul>
+        <li>
+        Title:  <%= article["title"] %>
+        </li>
+        <li>
+        URL:<a href= <%= article["url"] %> </a> 
+        </li>
+        <li>
+        Description: <%= article["description"] %>
+        </li>
+      </ul>
+      <% end %>

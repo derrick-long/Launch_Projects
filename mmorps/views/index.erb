@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> MMORPS! ROCK PAPER SISSORS </title>
+  </head>
+
+  <header>
+    <h1> MMORPS </h1>
+    <% if session[:computer] != nil %>
+      <% if session[:winner] == "player" %>
+        <p> Yo you've won <%= session[:number_wins]%> times! The computer chose <%= session[:computer] %>. </p>
+      <% elsif session[:winner] == "draw" %>
+        <p> It's a draw, no one wins! The computer chose <%= session[:computer] %>. </p>
+      <% elsif session[:winner] == "computer" %>
+        <p> Yo you've won <%= session[:number_wins]%> times, but the computer won this round. Way to suck, meatbag.The computer chose <%= session[:computer] %>. </p>
+      <% end %>
+    <% else %>
+      <p> Let's play Rock Paper Scissors internet style! </p>
+    <%end %>
+
+  </header>
+  <form action="/choose" method="post">
+    <h2> Choose!</h2>
+    <input type="submit" name="choice" value="Rock">
+    <input type="submit" name="choice" value="Scissors">
+    <input type="submit" name="choice" value="Paper">
+  </form>
+
+
+</html>

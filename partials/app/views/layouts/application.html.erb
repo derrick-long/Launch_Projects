@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= render 'layouts/header' %>
+  <body>
+    <!-- nav bar -->
+    <%= render 'layouts/navbars' %>
+
+    <!-- flash messages -->
+    <%= render 'layouts/flash_messages' %>
+    <!-- main content -->
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<h1> Cars </h1>
+<%= link_to "Add New Car", new_car_path %>
+<% if @cars.nil? %>
+  Add a car please
+<% else %>
+  <% @cars.each do |car| %>
+    <div> Car <%= car.id %> </div>
+    <li>   Model: <%= car.name %></li>
+    <li>   Manufacturer: <%= car.manufacturer.name %> </li>
+    <li>   Color: <%= car.color %> </li>
+    <li>   Year: <%= car.year %> </li>
+    <li>   Mileage: <%= car.mileage %> </li>
+    <li>   Description : <%= car.description %> </li>
+  <% end %>
+<% end %>

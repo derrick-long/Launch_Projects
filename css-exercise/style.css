@@ -1,0 +1,59 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+} /* so use helvetica on everything in the body if able, if browser doesn;t support it
+use sans-serif */
+
+nav {
+  background-color: #70B85D;
+  padding: 15px;
+
+}
+.right-section {
+  float: right;
+}
+
+nav h1 {
+  margin: 0;
+  float: left;
+}
+.clearfix {
+  overflow: auto;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+}
+
+nav ul {
+  margin: 8px 0px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #2C5E2E;
+  text-decoration: underline;
+}
+
+.main-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.small-page-section {
+  width: 25%;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 15px;
+  display: inline-block;
+  margin: 5px;
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}

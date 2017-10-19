@@ -1,0 +1,10 @@
+<!DOCTYPE HTML>
+<html>
+<ul>
+  <% @actor.each do |actor| %>
+
+  <li> Film:  <a href="/movies/<%= actor["id"] %>"> <%= actor["title"] %> </a> - Actor: <%= actor["name"]%> - Character : <%= actor["character"] %>  </li>
+
+  <% end %>
+</ul>
+</html>
